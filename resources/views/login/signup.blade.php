@@ -81,7 +81,7 @@
 
         <input v-model="code" type="text" maxlength="4" @keyup="checkNumber(event)" placeholder="Enter Code" class="input-code">
         <br/>
-        <button type="button" class="btn mt-4 mr-3 resend-btn">RESEND NOW</button>
+        <button @click="resend()" type="button" class="btn mt-4 mr-3 resend-btn">RESEND NOW</button>
         <button type="button" class="btn mt-4 verify-btn">SUBMIT CODE</button>
         </div>
     </div>
@@ -140,6 +140,10 @@
             return this.code;
         }
         
+      },
+
+      resend(){
+          alert("New code has been sent!");
       }
     }
   });
