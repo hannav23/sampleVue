@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
         <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <style>
             input[placeholder] {
@@ -26,6 +27,10 @@
                 border: none;
                 font-size: 30px;
                 color: #663399
+            }
+
+            .resend-btn{
+                border-radius: 1.5rem; border-color: #663399;background-color:#fff; color:#663399; width:15%; height: 50px
             }
 
             .resend-btn{
