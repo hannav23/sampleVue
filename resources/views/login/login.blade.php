@@ -47,8 +47,8 @@
                 justify-content: flex-end;  
             }
 
-            .bgimg {
-            background-image: url('/purple.jpg');
+            /* .bgimg {
+            
             height: 100%;
             background-position: center;
             background-size: cover;
@@ -56,7 +56,7 @@
             color: white;
             font-family: "Courier New", Courier, monospace;
             font-size: 25px;
-            }
+            } */
 
             .topleft {
             position: absolute;
