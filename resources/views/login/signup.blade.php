@@ -71,10 +71,10 @@
 
         {{-- <p>Please enter the verification code you've received then click verify.</p> --}}
 
-        <input v-model="code" type="text" maxlength="4" @keyup="checkNumber(event)" placeholder="Enter Code" class="input-code">
+        <input v-model="code" type="text" maxlength="4" @keypress="checkNumber(event)" placeholder="Enter Code" class="input-code">
         <br/>
         <button v-if="time == 0" @click="resend()" type="button" class="btn mt-4 mr-3 resend-btn">RESEND NOW</button>
-        <button v-else type="button" class="btn mt-4 mr-3 resend-btn" disabled>SEND NEW CODE in @{{time}}</button>
+        <button v-else type="button" class="btn mt-4 mr-3 resendAgain-btn" disabled>WAIT @{{time}}</button>
         <button v-if="code.length == 4" @click="code.length == 4 ? (lastPage = true) : (lastPage = false)" type="button" class="btn mt-4 verify-btn">SUBMIT CODE</button>
         <button v-else type="button" class="btn mt-4 verify-btn" disabled>SUBMIT CODE</button>
         </div>
